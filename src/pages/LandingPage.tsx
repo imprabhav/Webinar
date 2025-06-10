@@ -201,9 +201,14 @@ const LandingPage = () => {
     });
   };
 
+  // // Function to handle WhatsApp group join
+  // const handleJoinWhatsApp = () => {
+  //   // Replace this URL with your actual WhatsApp group invite link
+  //   const whatsappGroupUrl = "https://chat.whatsapp.com/YOUR_WHATSAPP_GROUP_INVITE_LINK";
+  //   window.open(whatsappGroupUrl, '_blank');
+  // };
 
-
-  // Function to close modal and reset states
+  // // Function to close modal and reset states
   // const handleCloseModal = () => {
   //   setShowRegistrationModal(false);
   //   setRegistrationSuccess(false);
@@ -215,11 +220,11 @@ const LandingPage = () => {
   };
 
   const CountdownBox: React.FC<CountdownBoxProps> = ({ value, label }) => (
-    <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl p-4 text-center min-w-[80px] transform hover:scale-105 transition-all duration-300">
-      <div className="text-3xl font-bold text-white mb-1 font-mono">
+   <div className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl p-3 sm:p-4 text-center min-w-[60px] sm:min-w-[80px] transform hover:scale-105 transition-all duration-300">
+    <div className="text-2xl sm:text-3xl font-bold text-white mb-1 font-mono">
         {value.toString().padStart(2, '0')}
       </div>
-      <div className="text-sm text-white/80 uppercase tracking-wider">
+      <div className="text-xs sm:text-sm text-white/80 uppercase tracking-wider">
         {label}
       </div>
     </div>
@@ -252,7 +257,7 @@ const LandingPage = () => {
         
         <div className="container mx-auto px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight text-gray-900 animate-slide-in-up">
+            <h1 className="text-4xl md:text-6xl font-bold mb-8 leading-tight text-gray-900 animate-slide-in-up">
               If You Don't Know These
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 animate-gradient">
                 {" "}10 Business Numbers
@@ -260,7 +265,7 @@ const LandingPage = () => {
               , You're Running Your Business Blind
             </h1>
 
-            <p className="text-xl md:text-2xl mb-8 text-gray-600 leading-relaxed max-w-3xl mx-auto animate-slide-in-up animation-delay-200">
+            <p className="text-l md:text-2xl mb-8 text-gray-600 leading-relaxed max-w-3xl mx-auto animate-slide-in-up animation-delay-200">
               Learn the 10 Numbers That Can Save You{" "}
               <strong className="text-gray-900 animate-bounce-text">
                 ₹50,000 to ₹5,00,000 per Year
@@ -284,10 +289,10 @@ const LandingPage = () => {
             <div className="mb-8 animate-slide-in-up animation-delay-600">
               <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-6 max-w-2xl mx-auto shadow-2xl">
                 <div className="flex items-center justify-center gap-2 mb-4">
-                  <Clock className="text-white animate-spin-slow" size={24} />
+                  <Clock className="text-white animate-spin-slow" size={20} />
                   <h3 className="text-xl font-bold text-white">Workshop Starts In</h3>
                 </div>
-                <div className="flex justify-center gap-4">
+                <div className="flex justify-center gap-2">
                   <CountdownBox value={timeLeft.days} label="Days" />
                   <CountdownBox value={timeLeft.hours} label="Hours" />
                   <CountdownBox value={timeLeft.minutes} label="Minutes" />
@@ -608,23 +613,23 @@ const LandingPage = () => {
         
         <div className="container mx-auto px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-5xl font-bold mb-8 text-white animate-slide-in-up">
+            <h2 className="text-4xl font-bold mb-8 text-white animate-slide-in-up">
               Stop Guessing. Start Knowing.
             </h2>
 
-            <p className="text-2xl mb-12 font-semibold text-blue-100 animate-slide-in-up animation-delay-200">
+            <p className="text-1xl mb-12 font-semibold text-blue-100 animate-slide-in-up animation-delay-200">
               ₹1199 to fix the leaks, save lakhs, and take control of your
               business.
             </p>
 
             <button
               onClick={handleRegister}
-              className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-6 px-12 rounded-lg text-2xl transition-all duration-300 shadow-lg hover:shadow-2xl mb-8 inline-flex items-center gap-3 transform hover:scale-105 animate-slide-in-up animation-delay-400 hover:animate-pulse-glow"
+              className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-6 px-12 rounded-lg text-1xl transition-all duration-300 shadow-lg hover:shadow-2xl mb-8 inline-flex items-center gap-3 transform hover:scale-105 animate-slide-in-up animation-delay-400 hover:animate-pulse-glow"
             >
-              Register Now - ₹1199 <ArrowRight size={24} className="animate-bounce-horizontal" />
+              Register Now - ₹1199 <ArrowRight size={20} className="animate-bounce-horizontal" />
             </button>
 
-            <div className="space-y-4 text-lg text-blue-100 animate-slide-in-up animation-delay-600">
+            <div className="space-y-4 text-md text-blue-100 animate-slide-in-up animation-delay-600">
               <p>Seats are limited. No replay sales. No upsell.</p>
               <p className="font-semibold text-white">
                 You pay once. You learn once. You gain for life.
