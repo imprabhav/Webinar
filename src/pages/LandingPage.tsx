@@ -232,10 +232,10 @@ const LandingPage = () => {
       <header className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-40 animate-fade-in">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-blue-600 animate-slide-in-left">
+            <div className="text-1xl font-bold text-blue-600 animate-slide-in-left">
               Modilipi Accounting
             </div>
-            <div className="text-sm bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-2 rounded-full font-medium animate-pulse-glow">
+            <div className="text-sm bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-2 rounded-full font-small animate-pulse-glow">
               Limited Seats
             </div>
           </div>
