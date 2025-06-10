@@ -201,18 +201,13 @@ const LandingPage = () => {
     });
   };
 
-  // Function to handle WhatsApp group join
-  const handleJoinWhatsApp = () => {
-    // Replace this URL with your actual WhatsApp group invite link
-    const whatsappGroupUrl = "https://chat.whatsapp.com/YOUR_WHATSAPP_GROUP_INVITE_LINK";
-    window.open(whatsappGroupUrl, '_blank');
-  };
+
 
   // Function to close modal and reset states
-  const handleCloseModal = () => {
-    setShowRegistrationModal(false);
-    setRegistrationSuccess(false);
-  };
+  // const handleCloseModal = () => {
+  //   setShowRegistrationModal(false);
+  //   setRegistrationSuccess(false);
+  // };
 
   type CountdownBoxProps = {
     value: number;
